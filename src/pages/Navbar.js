@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../components/styles/Navbar.css'
-// import {Footer} from './'
-// import {Footer} from './Footer'
+
 import Footer from '../pages/Footer'
 export const Navbar = () => {
   return (
@@ -10,7 +9,7 @@ export const Navbar = () => {
         <div className="logo">
             Package Pros Logistics Co.
         </div>
-        <nav className='item'>
+        {/* <nav className='item'>
             <ul className= 'ul'>
                 <li>
                     <Link to ='/Admin'>Admin</Link>
@@ -22,7 +21,7 @@ export const Navbar = () => {
                     <Link to ='/Register'>Register</Link>
                 </li>
             </ul>
-        </nav>
+        </nav> */}
         <Footer/> 
     </div>
   )

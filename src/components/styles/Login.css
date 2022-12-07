@@ -1,50 +1,61 @@
-.App{
+.container {
     text-align: center;
     display: flex;
-    flex-direction: column-reverse;
-    background-image: url(../assets/Screenshot\ FINAL.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background: cover; */ 
-    height: 100vh;
+    /* flex-direction: column-reverse;  */
+    
+   
     align-items: center;
     justify-content: space-between;
     color: blue;
-    
+
     /* background-image: linear-gradient(79deg, rgb(199, 127, 26), rgb(63, 186, 178), rgb(13, 44, 116)); */
+}
+
+.App{
+    background-image: url(../assets/Screenshot\ FINAL.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 /* .auth-form-container, .login-form, .register-form {
     display: flex;
     flex-direction: column; */
 /* } */
-.auth-form-container{
+.auth-form-container {
+    margin-top: 0%;
     display: flex;
-    flex-direction: column;
-    /* padding:5rem;
+    padding: 5rem;
     border: 1px solid white;
     border-radius: 10px;
-    margin:0.5 rem; */
-    }
-label{
-    /* align-items: center; */
-    text-align:left;
-    padding: 0.25rem 0;
+    margin: 0.5 rem;
 }
-input{
+
+label {
+    /* align-items: center; */
+    text-align: left;
+    padding: 0.25rem 0;
+    margin-right: 10px;
+    margin-left:20px;
+}
+
+input {
     margin: 0.5rem 0;
     padding: 1rem;
     border: none;
     border-radius: 10px;
 }
-button{
+
+button {
     border: none;
+    margin-left: 10px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
     color: rgb(13, 44, 116);
 }
-.link-btn{
+
+.link-btn {
     background: none;
     color: blue;
     text-decoration: underline;
