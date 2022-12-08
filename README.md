@@ -27,6 +27,6 @@ Front-end
 
 cd into the project directory run 'npm install' run 'npm start' and the application will open into browser
 
-front-end link
+front-end link https://package-pros-project.vercel.app/
 
-Github backend repo link
+Github backend repo link https://github.com/andisiambuku/Package-Pros
