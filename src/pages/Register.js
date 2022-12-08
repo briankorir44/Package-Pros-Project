@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import '../components/styles/Login.css'
+// import React, { useState } from "react";
+// import '../components/styles/Login.css'
 
 
 export const Register = (props) => {
