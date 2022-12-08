@@ -9,12 +9,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 // import {Register} from './components/Register';
 
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(
-//   <Router>
-//       <App/>
-//       {/* <Footer/> */}
-//   </Router>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <Router>
+      <App/>
+      {/* <Footer/> */}
+  </Router>
 );
 
 
