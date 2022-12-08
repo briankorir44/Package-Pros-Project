@@ -7,9 +7,9 @@ export const Register = (props) => {
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(email);
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log(email);
     }
     return (
         <div className="container">
