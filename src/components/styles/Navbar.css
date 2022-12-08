@@ -8,12 +8,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+/* body{
     
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh
+    height: 100vh */
 }
 .sum{
     display: flex;
