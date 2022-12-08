@@ -5,10 +5,7 @@ import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 // import '.com/styles/Navbar.css'
 import './components/styles/Navbar.css'
-import Sidebar from './pages/Sidebar';
-import Dashboard from './pages/Dashboard.js';
-import About from './pages/About.js';
-import Orders from './pages/Orders.js';
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -25,16 +22,9 @@ function App() {
 <Routes>
       <Route
           exact path="/" element={<Navbar/>}></Route>
-       
-      </Routes>
-      <Sidebar>
-        <Routes>
           <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Orders" element={<Orders />} />
-          
-        </Routes>
-      </Sidebar>
+      </Routes>
+      
     </div>
   );
 }
