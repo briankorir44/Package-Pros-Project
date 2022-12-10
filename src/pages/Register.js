@@ -3,8 +3,13 @@ import '../components/styles/Login.css'
 
 export const Register = (props) =>{
 
+    // state variables
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    // localhost server variable for testing request
+    const API = "http://localhost:3000";
+
 
 
 }
