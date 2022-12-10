@@ -13,7 +13,8 @@ export const Register = (props) =>{
     // submit_handler
     const handleSubmit = (e) =>{
         e.preventDefault();
-        // POST to create request to the server
+
+        // POST: to create user request to the server
         fetch(`${API}/users`, {
             method: "POST",
             headers: {
@@ -33,6 +34,7 @@ export const Register = (props) =>{
 
           setEmail("");
           setPassword("");
+
     };
     // render jsx
     return(
