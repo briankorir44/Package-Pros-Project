@@ -30,38 +30,23 @@ export const Register = (props) =>{
             .then((res) => res.json())
             .then((data) => console.log(data));
 
-          setUsername("");
+
           setEmail("");
           setPassword("");
-    }
-
-
-
+    };
+    // render jsx
+    return(
+        <div className="container">
+            <form className="register-form" onSubmit={handleSubmit}>
+                <label htmlFor="Username">Full Name</label>
+                {/* <input value={Username} onChange={(e)=>setUsername(e.target.value)} name="Username" id="Username" placeholder="Full Name" /> */}
+                < label htmlFor="email">E-mail</label>
+                <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
+                < label htmlFor="password">Password</label>
+                <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="password" id="password" name="password" />
+                <button type="submit">Register</button>
+            </form>
+            <button className='link-btn' onClick={() => props.onFormSwitch('login')}>Already have an account? Log In Here</button>
+        </div>
+    )
 }
-
-
-// export const Register = (props) => {
-//     const [email, setEmail] = useState('');
-//     const [pass, setPass] = useState('');
-//     const [name, setName] = useState('');
-
-//     const handleSubmit = (e) => {
-//         e.preventDefault();
-//         console.log(email);
-//     }
-//     return (
-//         <div className="container">
-//             <form className="register-form" onSubmit={handleSubmit}>
-//                 <label htmlFor="name">Full Name</label>
-//                 <input value={name} name="name" id="name" placeholder="Full Name" />
-//                 < label htmlFor="email">E-mail</label>
-//                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
-//                 < label htmlFor="password">Password</label>
-//                 <input value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="*******" id="password" name="password" />
-//                 <button type="submit">Register</button>
-//             </form>
-//             <button className='link-btn' onClick={() => props.onFormSwitch('login')}>Already have an accout? Log In Here</button>
-//         </div>
-//     )
-// }
-
