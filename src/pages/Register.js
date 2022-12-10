@@ -10,6 +10,11 @@ export const Register = (props) =>{
     // localhost server variable for testing request
     const API = "http://localhost:3000";
 
+    // submit_handler
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+    }
+
 
 
 }
