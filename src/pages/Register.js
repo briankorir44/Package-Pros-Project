@@ -13,6 +13,26 @@ export const Register = (props) =>{
     // submit_handler
     const handleSubmit = (e) =>{
         e.preventDefault();
+        // POST to create request to the server
+        fetch(`${API}/users`, {
+            method: "POST",
+            headers: {
+              Accepts: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              user: {
+                email,
+                password,
+              },
+            }),
+          })
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+
+          setUsername("");
+          setEmail("");
+          setPassword("");
     }
 
 
