@@ -39,7 +39,7 @@ export const Login = (props) => {
     // jsx
     return (
         <div className="container">
-            <form className="login-form" >
+            <form className="login-form" onSubmit={handleSubmit} >
                 < label htmlFor="email">E-mail</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
                 < label htmlFor="password">Password</label>

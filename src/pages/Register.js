@@ -39,7 +39,7 @@ export const Register = (props) =>{
     // render jsx
     return(
         <div className="container">
-            <form className="register-form" >
+            <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="Username">Full Name</label>
                 {/* <input value={Username} onChange={(e)=>setUsername(e.target.value)} name="Username" id="Username" placeholder="Full Name" /> */}
                 < label htmlFor="email">E-mail</label>
