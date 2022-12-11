@@ -8,7 +8,7 @@ export const Register = (props) =>{
     const [password, setPassword] = useState('');
 
     // localhost server variable for testing request
-    const API = "http://localhost:3000";
+    const API = "https://package-pros.onrender.com";
 
     // submit_handler
     const handleSubmit = (e) =>{
