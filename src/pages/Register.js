@@ -7,7 +7,7 @@ export const Register = (props) =>{
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    // localhost server variable for testing request
+    // backend API variable
     const API = "https://package-pros.onrender.com";
 
     // submit_handler
@@ -39,14 +39,14 @@ export const Register = (props) =>{
     // render jsx
     return(
         <div className="container">
-            <form className="register-form" onSubmit={handleSubmit}>
+            <form className="register-form" >
                 <label htmlFor="Username">Full Name</label>
                 {/* <input value={Username} onChange={(e)=>setUsername(e.target.value)} name="Username" id="Username" placeholder="Full Name" /> */}
                 < label htmlFor="email">E-mail</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="youremail@gmail.com" id="email" name="email" />
                 < label htmlFor="password">Password</label>
                 <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="password" id="password" name="password" />
-                <button type="submit">Register</button>
+                <button type="submit" onSubmit={handleSubmit}>Register</button>
             </form>
             <button className='link-btn' onClick={() => props.onFormSwitch('login')}>Already have an account? Log In Here</button>
         </div>
